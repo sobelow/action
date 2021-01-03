@@ -1,0 +1,13 @@
+name: Sobelow
+author: Griffin Byatt
+description: Security-focused static analysis for the Phoenix Framework
+
+inputs:
+  flags:
+    description: "Flags (https://github.com/nccgroup/sobelow#options)"
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.flags }}
