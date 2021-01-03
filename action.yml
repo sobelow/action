@@ -3,6 +3,10 @@ author: Griffin Byatt
 description: Security-focused static analysis for the Phoenix Framework
 
 inputs:
+  report:
+    required: true
+    description: "Output a results.sarif file for GitHub Security integration"
+    default: true
   flags:
     description: "Flags (https://github.com/nccgroup/sobelow#options)"
 
@@ -11,3 +15,4 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.flags }}
+    - ${{ inputs.report }}
