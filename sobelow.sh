@@ -1,7 +1,7 @@
 #!/bin/sh -l
 
 REPORT="--format sarif >> results.sarif"
-if [[ $2 == "false" ]]; then
+if [ "$2" = "false" ]; then
     REPORT=""
 fi
 
