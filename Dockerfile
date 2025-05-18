@@ -1,4 +1,4 @@
-FROM elixir:1.11.2
+FROM elixir:1.18.3
 
 COPY sobelow.sh /sobelow.sh
 
